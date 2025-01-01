@@ -1,6 +1,7 @@
 package com.ajith.joblisting.JobListing.aop;
 
 
+import com.ajith.joblisting.JobListing.annotation.DummyAnt;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
+
 public class SpringAop {
 
     @AfterReturning("execution(public * com.ajith.joblisting.JobListing.controller.JobListingController.getAllInfo())")
